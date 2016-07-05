@@ -1,6 +1,22 @@
-<div class="form-group checkboxGroup">
-    <div class="input-group">
-        <span class="input-group-addon">{{title}}</span>
-        <input type="checkbox" tabindex="{{otaTabindex}}" ng-model="ngModel" ng-checked="ngModel" />
-    </div>
-</div>
+div.checkboxGroup {
+    width: 205px;
+}
+
+div.checkboxGroup > div.input-group {
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+div.checkboxGroup > div.input-group > span.input-group-addon {
+    border:none;
+    border-right:1px solid #ccc;
+}
+
+div.checkboxGroup > div.input-group > input {
+	border:none;
+	box-shadow:none;
+	margin:0 0 0 17px;
+	vertical-align:middle;
+	width:22px;
+	height:35px;
+}
